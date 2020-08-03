@@ -8,6 +8,7 @@
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C++](./1.cpp)  | _O(n)_       | _O(n)_          | Easy         | HashMap||
 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./3.cpp)  | _O(n)_ | _O(n)_          | Medium         |HashMap,Sliding Window||
+929 | [Unique Email Addresses ](https://leetcode.com/problems/unique-email-addresses/) | [C++](./929/929.cpp) , [Python3](./929/929.py)  | _O(C)_ | _O(C)_          | Easy         |Set, Vector||
 
 
 
