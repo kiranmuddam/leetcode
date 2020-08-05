@@ -1,28 +1,30 @@
 class Solution {
-public:
- string licenseKeyFormatting(string S, int K) {
-        string temp;
-        int i = 0;
-        for (; i < S.length(); i++) {
-            // if (S[i]!='-') {
-            //     temp+=toupper(S[i]);
-            // }
-            if (S[i]=='-') continue;
-             temp+=toupper(S[i]);
+  public:
+    static string licenseKeyFormatting(string S, int K) {
+      int i = 0;
+      short int groupLimitCounter = 0;
+      string finalFormattedString = "";
+      for (i = S.size() - 1; i >= 0; --i) {
+      	if (S[i] == '-') {
+      		continue;
+      	}
+      	//char currentChar = toupper(S[i]);
+        groupLimitCounter++;
+        finalFormattedString += toupper(S[i]);
+        if (groupLimitCounter == K && i != 0) {
+          finalFormattedString += '-';
+          groupLimitCounter = 0;
         }
-        string temp2; int track = 0;
-        for (i = temp.length()-1; i>=0; --i) {
-            track++;
-            temp2+=temp[i];
-            if (track==K && i != 0 ) {
-                temp2+="-";
-                track = 0;
-            }
-        }
-        // reverseStr(temp2);
-        // S = "";
-        // S+=temp2;
-        reverse(temp2.begin(),temp2.end());
-        return temp2;
+      }
+      
+      //cout<<groupLimitCounter<<endl;
+      reverse(finalFormattedString.begin(), finalFormattedString.end());
+      //cout<<finalFormattedString<<endl;
+      int finalSize = finalFormattedString.size();
+      if (finalFormattedString[0] == '-') {
+      return finalFormattedString.substr(1, finalSize);
+      } 
+      return finalFormattedString;
+      
     }
 };
