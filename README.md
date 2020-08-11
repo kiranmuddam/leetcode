@@ -15,7 +15,6 @@
 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [C++](./7/7.cpp)  | _O(logn)_       | _O(1)_          | Easy         | ||
 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [C++](./7/7.cpp)  | _O(logn)_       | _O(1)_          | Easy         | ||
 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [C++](./7/7.cpp)  | _O(logn)_       | _O(1)_          | Easy         | ||
-
 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [C++](./26/26.cpp)  | _O(n)_ | _O(1)_          | Easy         | Two Pointers||
 482 | [License Key Formatting ](https://leetcode.com/problems/license-key-formatting/) | [C++](./482/482.cpp) | _O(N)_ | _O(N)_          | Easy         |Vector||
 904 | [Fruit Into Baskets](https://leetcode.com/articles/fruit-into-baskets/) | [C++](./904/904.cpp) | _O(N)_ | _O(N)_          | Medium         | HashMap, Vector, Sliding Window||
