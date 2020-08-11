@@ -8,9 +8,11 @@
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C++](./1/1.cpp)  | _O(n)_       | _O(n)_          | Easy         | HashMap||
 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./3/3.cpp)  | _O(n)_ | _O(n)_          | Medium         |HashMap,Sliding Window||
+26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [C++](./26/26.cpp)  | _O(n)_ | _O(1)_          | Easy         | Two Pointers||
 482 | [License Key Formatting ](https://leetcode.com/problems/license-key-formatting/) | [C++](./482/482.cpp) | _O(N)_ | _O(N)_          | Easy         |Vector||
 904 | [Fruit Into Baskets](https://leetcode.com/articles/fruit-into-baskets/) | [C++](./904/904.cpp) | _O(N)_ | _O(N)_          | Medium         | HashMap, Vector, Sliding Window||
 929 | [Unique Email Addresses ](https://leetcode.com/problems/unique-email-addresses/) | [C++](./929/929.cpp) , [Python3](./929/929.py)  | _O(C)_ | _O(C)_          | Easy         |Set, Vector||
+
 
 
 
