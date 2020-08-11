@@ -10,8 +10,8 @@
 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./3/3.cpp)  | _O(n)_ | _O(n)_          | Medium         |HashMap,Sliding Window||
 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [C++](./7/7.cpp)  | _O(logn)_       | _O(1)_          | Easy         | ||
 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./9/9.cpp)  | _O(logn)_       | _O(1)_          | Easy         | ||
-7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [C++](./7/7.cpp)  | _O(logn)_       | _O(1)_          | Easy         | ||
-7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [C++](./7/7.cpp)  | _O(logn)_       | _O(1)_          | Easy         | ||
+13 | [Roman To Integer](https://leetcode.com/problems/roman-to-integer/) | [C++](./13/13.cpp)  | _O(n)_       | _O(n)_          | Easy         | HashMap||
+14 | [Longest common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [C++](./14/14.cpp)  | _O(n)_       | _O(1)_          | Easy         | ||
 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [C++](./7/7.cpp)  | _O(logn)_       | _O(1)_          | Easy         | ||
 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [C++](./7/7.cpp)  | _O(logn)_       | _O(1)_          | Easy         | ||
 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [C++](./7/7.cpp)  | _O(logn)_       | _O(1)_          | Easy         | ||
