@@ -17,7 +17,7 @@
 482 | [License Key Formatting ](https://leetcode.com/problems/license-key-formatting/) | [C++](./482/482.cpp) | _O(N)_ | _O(N)_          | Easy         |Vector||
 904 | [Fruit Into Baskets](https://leetcode.com/articles/fruit-into-baskets/) | [C++](./904/904.cpp) | _O(N)_ | _O(N)_          | Medium         | HashMap, Vector, Sliding Window||
 929 | [Unique Email Addresses ](https://leetcode.com/problems/unique-email-addresses/) | [C++](./929/929.cpp) , [Python3](./929/929.py)  | _O(C)_ | _O(C)_          | Easy         |Set, Vector||
-1108 | [Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/) | [C++](./1108/1108.py)  | _O(n)_       | _O(1)_          | Easy         | ||
+1108 | [Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/) | [Python3](./1108/1108.py)  | _O(n)_       | _O(1)_          | Easy         | ||
 1455 | [Check If a Word Occurs As a Prefix of Any Word in a Sentence](https://leetcode.com/contest/weekly-contest-190/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/) | [python3](./weekly-contest-190/1.py)  | _O(n)_       | _O(n)_          | Easy         | ||
 1456 | [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/contest/weekly-contest-190/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [C++](./weekly-contest-190/2.cpp)  | _O(n)_ | _O(1)_          | Medium         |Sliding Window||
 1539 | [Kth Missing Positive Number](https://leetcode.com/contest/biweekly-contest-32/problems/kth-missing-positive-number/) | [C++](./1539/1539.cpp)  | _O(n)_       | _O(1)_          | Easy         | ||
