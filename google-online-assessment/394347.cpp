@@ -45,6 +45,8 @@ class wateringPlants {
         }
 
         cout << totalRefills << endl;
+        
+        return totalRefills;
     }
 };
 
