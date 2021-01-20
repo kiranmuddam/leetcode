@@ -1,30 +1,31 @@
 class Solution {
 public:
     bool isValid(string s) {
-        int stringSize=s.size();
-        if(stringSize%2!=0){
-            return false;
-        }
-        if(stringSize==0){
-            return true;
-        }
-        map<char, char> m = { {']','['},{')','('},{'}','{'} };
-        stack<char> myStack;
-        for(int i = 0;i<s.size();i++){
-            if(s[i]=='{' or s[i]=='[' or s[i]=='(' ){
-                myStack.push(s[i]);
-            }
-            else if(s[i]=='}' or s[i]==']' or s[i]==')' ){
-                if(myStack.empty() or myStack.top()!=m[s[i]]){
+        stack<char> valid;
+        
+        unordered_map<char, char> bracesPair;
+        
+        bracesPair['}'] = '{';
+        bracesPair[']'] = '[';
+        bracesPair[')'] = '(';
+
+        
+        for (int i = 0; i < s.size(); i++) {
+            if (s[i] == '{' || s[i] == '(' || s[i] == '[') {
+                valid.push(s[i]);
+            } else {
+                if (valid.empty() || (valid.top() != bracesPair[s[i]])) {
                     return false;
-                }else{
-                    myStack.pop();
                 }
+                
+                valid.pop();
             }
         }
-        if(myStack.empty()){
+        
+        if (valid.empty()) {
             return true;
         }
+        
         return false;
     }
 };
