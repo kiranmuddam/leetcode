@@ -1,4 +1,4 @@
-name: Sync Leetcode
+name: Kiran Babu Muddam - Leetcode
 
 on:
   workflow_dispatch:
