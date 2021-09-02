@@ -1,31 +1,29 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        unordered_map<char,int> visitedChars;
-        int uniqueCounter=0;
-        int longUniqueCounter=0;
-        for(int i=0;i<s.size();i++){
-            if((visitedChars.find(s[i])==visitedChars.end())){
-                uniqueCounter=uniqueCounter+1;
-                longUniqueCounter = max(longUniqueCounter,uniqueCounter);
-                visitedChars[s[i]]=i;
-            }
-            else{
-                if((i-visitedChars[s[i]])<=uniqueCounter){
-                    uniqueCounter=i-visitedChars[s[i]];
-                    visitedChars.erase(s[i]);
-                    visitedChars[s[i]]=i;
-                }
-                else{
-                    uniqueCounter++;
-                    longUniqueCounter=max(longUniqueCounter,uniqueCounter);
-                    visitedChars[s[i]]=i;
-
-                }                
-            }
-
-        }
-        return longUniqueCounter;
+        unordered_map<char, int> charPosMap;
+        int start = 0;
+        int maxLength = 0;
+        int windowLength = 0;
         
+        for (int i = 0; i < s.size(); i++) {
+            if (charPosMap.find(s[i]) == charPosMap.end()) {
+                charPosMap[s[i]] = i;
+                windowLength++;
+            } else {
+                if (charPosMap[s[i]] >= start) {
+                    maxLength = max(maxLength, windowLength);
+                    windowLength = i - charPosMap[s[i]];
+                    start = charPosMap[s[i]]++;
+                    charPosMap[s[i]] = i;
+
+                } else {
+                    charPosMap[s[i]] = i;
+                    windowLength++;
+                }
+            }
+        }
+        
+        return max(maxLength, windowLength);
     }
 };
